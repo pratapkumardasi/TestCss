@@ -1,18 +1,9 @@
-﻿*,
-*:after,
-*:before {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Open Sans";
-}
+﻿
 
-.progress {
-    margin: 20px auto;
+.progress {   
     text-align: center;
     padding-bottom: 80px;
 }
-
     .progress .circle,
     .progress .bar {
         display: inline-block;
@@ -90,3 +81,17 @@
 .nobackground {
     background: none;
 }
+
+.panel-heading .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings'; /* essential for enabling glyphicon */
+    content: "\e114"; /* adjust as needed, taken from bootstrap.css */
+    float: right; /* adjust as needed */
+    color: grey; /* adjust as needed */
+}
+
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080"; /* adjust as needed, taken from bootstrap.css */
+}
+
