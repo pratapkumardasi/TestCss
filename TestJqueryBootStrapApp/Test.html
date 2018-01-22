@@ -32,6 +32,20 @@
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h4 class="panel-title">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            Provider Auth
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse">
+                    <div id="providerAuthPanel" class="panel-body">
+
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
                         <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
                             Demographics
                         </a>
@@ -98,34 +112,84 @@
         </div>
         <div class="row col-md-12">
             <span><b>Metadata</b></span>
+        </div>
+        <div class="row" col-md-12" style="padding:0px 7px 0px 0px">
             <hr />
         </div>
         <div class="row">
-            <div class="col-md-2"> <strong>First Name:</strong> ${ firstName } <br /></div>
-            <div class="col-md-2"> <strong>Last Name:</strong> ${ lastName } <br /></div>
-            <div class="col-md-2"> <strong>SSN:</strong> ${ ssn } <br /></div>
-            <div class="col-md-2"> <strong>DOB:</strong> ${ dateOfBirth } <br /></div>
-            <div class="col-md-4"> <strong>Master Id:</strong> ${ masterId } <br /></div>
+            <div class="col-md-12"> <strong>Medical Coverage:</strong> ${ firstName } <br /></div>
+
         </div>
-        <div class="row" style="padding:4px 7px 2px 4px">
-            <hr />
+        <div class="row">
+            <div class="col-md-3"> <strong>Multi Policy:</strong> ${ firstName } <br /></div>
+            <div class="col-md-3"> <strong>Dual Demo:</strong> ${ lastName } <br /></div>
+            <div class="col-md-3"> <strong>Dual Eligible:</strong> ${ ssn } <br /></div>
+            <div class="col-md-3"> <strong>Humana Sedondary:</strong> ${ ssn } <br /></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"> <strong>H1 Member:</strong> ${ firstName } <br /></div>
+            <div class="col-md-3"> <strong>Restricted Group:</strong> ${ lastName } <br /></div>
+            <div class="col-md-6"> <strong>AEC Member:</strong> ${ ssn } <br /></div>
+        </div>
+        <div class="row">
+            <div class="col-md-3"> <strong>Current Coverage :</strong> ${ firstName } <br /></div>
+            <div class="col-md-3"> <strong>Cov Termed:</strong> ${ lastName } <br /></div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3"> <strong>Future Coverage :</strong> ${ firstName } <br /></div>
+            <div class="col-md-3"> <strong>Cov Termed:</strong> ${ lastName } <br /></div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-3"> <strong>Past Coverage :</strong> ${ firstName } <br /></div>
+            <div class="col-md-3"> <strong>Cov Termed:</strong> ${ lastName } <br /></div>
+
+        </div>
+        <div class="row" col-md-12" style="padding:4px 7px 2px 4px">
+
         </div>
         <div class="row col-md-12">
             <span><b>Coverage Dialogues</b></span>
+
+        </div>
+        <div class="row" col-md-12" style="padding:0px 7px 0px 0px">
             <hr />
         </div>
         <div class="row">
-            <div class="col-md-2"></div>
+            <div class="col-md-2">
+                
+                <!--<div class="col-md-2">
+            {{each Skills}}
+            ${Skill} <br />
+            {{/each}}    </div>-->
+            </div>
         </div>
         <div class="row" style="padding:4px 7px 2px 4px">
-          <hr />
+
         </div>
         <div class="row col-md-12">
+            
+
+            
+
             <span><b>Elibility Disclaimer </b></span>
+            
+        </div>
+        <div class="row" col-md-12" style="padding:0px 7px 0px 0px">
             <hr />
         </div>
         <div class="row">
-            <div class="col-md-2"> </div>
+            <div class="col-md-2">
+                
+
+
+                <!--<div class="col-md-2">
+                {{each Skills}}
+                ${Skill} <br />
+                {{/each}}
+            </div>-->
+            </div>
         </div>
     </script>
     <script type="text/javascript">
